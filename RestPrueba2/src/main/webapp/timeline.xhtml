@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="../assets/css/font-awesome.css" />
+
+	<!-- page specific plugin styles -->
+
+	<!-- text fonts -->
+	<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="../assets/css/ace.css"
+		class="ace-main-stylesheet" id="main-ace-style" />
+</h:head>
+<body>
+	<h:form id="test" styleClass="uk-form">
+		<p:commandButton action="#{timeLineBean.levantaTarea}" value="Muestra Linea de Tiempo" update="test" styleClass="btn btn-success btn-next"/>
+		<div class="page-header">
+			<h1>Linea de Tiempo Proceso</h1>
+		</div>
+		<!-- /.page-header -->
+		
+		<div id="timeline-1">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+					<!-- #section:pages/timeline -->
+					<div class="timeline-container">
+						<ui:repeat value="#{timeLineBean.comentarios}" var="comentario">
+							<div class="timeline-item">
+								<!-- #section:pages/timeline.item -->
+								<div class="timeline-item clearfix">
+									<!-- #section:pages/timeline.info -->
+									<div class="timeline-info">
+										<img alt="Susan't Avatar" src="../assets/avatars/avatar1.png" />
+										<span class="label label-info label-sm">16:22</span>
+									</div>
+
+									<!-- /section:pages/timeline.info -->
+									<div class="widget-box transparent">
+										<div class="widget-header widget-header-small">
+											<h5 class="widget-title smaller">
+												<h:outputText value="#{comentario.usuario}" id="comentUsu" />
+											</h5>
+
+											<span class="widget-toolbar no-border"> <i
+												class="ace-icon fa fa-clock-o bigger-110"></i> 16:22
+											</span>
+
+										</div>
+
+										<div class="widget-body">
+											<div class="widget-main">
+												<span><h:outputText value="#{comentario.comentario}" id="comentComent" /></span>
+												<div class="space-6"></div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ui:repeat>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.timeline-container -->
+	</h:form>
+</body>
+</html>

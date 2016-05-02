@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Demo Integracion EAP BPMS</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="" />
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>St Computacion</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt=""/>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>St Computacion</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt=""/>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>St Computacion</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>St Computacion<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">                    
+                    <li>
+                        <a href="tarea.jsf"><i class="fa fa-fw fa-table"></i>Bandeja Tarea</a>
+                    </li>
+                    <li class="active">
+                        <a href="registro.jsf"><i class="fa fa-fw fa-edit"></i>Ingreso</a>
+                    </li>
+                    <!-- <li>
+                        <a href="registro.xhtml"><i class="fa fa-fw fa-edit"></i>Revision</a>
+                    </li>
+                    <li>
+                        <a href="registro.xhtml"><i class="fa fa-fw fa-edit"></i>Gestion</a>
+                    </li>
+                    <li>
+                        <a href="registro.xhtml"><i class="fa fa-fw fa-edit"></i>Rechazo</a>
+                    </li>
+                    <li>
+                        <a href="registro.xhtml"><i class="fa fa-fw fa-edit"></i>Notificacion</a>
+                    </li> -->
+                  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Bandeja de Tareas
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Bandeja de Tareas
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                  <div class="col-lg-6">
+					<h:form id="tarea" styleClass="uk-form">
+						<h:dataTable value="#{tareaBean.listTask}" id="testTabla" 
+									styleClass="table table-bordered table-hover" 
+									var="_detalle" >
+							<h:column>
+								  	<f:facet name="header">
+						            	<h:outputText value="ID" />
+				        			</f:facet>
+				        				<h:outputText value="#{_detalle.id}" />
+							</h:column>
+							<h:column>
+								  	<f:facet name="header">
+						            	<h:outputText value="Nombre" />
+				        			</f:facet>
+				        				<h:outputText value="#{_detalle.name}" />
+							</h:column>
+							<h:column>
+								  	<f:facet name="header">
+						            	<h:outputText value="Id Proceso" />
+				        			</f:facet>
+				        				<h:outputText value="#{_detalle.processInstanceId}" />
+							</h:column>
+							<h:column>
+								  	<f:facet name="header">
+						            	<h:outputText value="Estado" />
+				        			</f:facet>
+				        				<h:outputText value="#{_detalle.status}" />
+							</h:column>
+							<h:column>
+								  	<f:facet name="header">
+						            	<h:outputText value="Usuario Actual" />
+				        			</f:facet>
+				        				<h:outputText value="#{_detalle.actualOwner}" />
+							</h:column>
+							<h:column>
+						       <f:facet name="header">
+						           <h:outputText id="Opciones" value=""/>
+						       </f:facet>
+						       <p:commandButton value="Resolver" action="#{tareaBean.resue(_detalle)}" styleClass="btn btn-xs btn-success" update=":modif:pag"/>
+						      <!-- <p:commandButton value="TimeLine" action="#{tareaBean.timeline(_detalle)}" styleClass="btn btn-xs btn-info" update=":modif:pag"/> --> 
+						   </h:column>
+						</h:dataTable>
+						</h:form>
+						<h:form id="modif">	
+							<h:panelGroup id="pag">
+								<ui:include src="#{tareaBean.pagina}" />
+							</h:panelGroup>
+						</h:form>
+										
+					</div>
+                  </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</h:body>
+</f:view>
